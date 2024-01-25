@@ -29,7 +29,7 @@ jobs:
       - name: Archive Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: sbdevtools-artifact
+          name: sb1-artifact
           path: target/
 
   sonar:

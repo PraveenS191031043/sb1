@@ -22,6 +22,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
+      - name: Create /data directory
+        run: mkdir -p /data
+        
+      - name: Set permissions for /data directory
+        run: chmod 777 /data
 
       - name: Build with Maven
         run: mvn -B package --file pom.xml
